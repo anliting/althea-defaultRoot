@@ -16,10 +16,13 @@ function get(env){
         headers:env.headers,
         content:`
 <!doctype html>
-<title>Pageversions</title>
+<title>Root</title>
 <base href=${env.config.root}>
 <body>
-<script src=plugins/althea-defaultRoot/root.js></script>
+${env.althea.loadModule(
+    env.envVars,
+    'plugins/althea-defaultRoot/root.js'
+)}
 `,
     }
 }
