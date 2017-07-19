@@ -19,7 +19,7 @@ function get(env){
 <title>Pageversions</title>
 <base href=${env.config.root}>
 <body>
-<script src=js/pageversions.js></script>
+<script src=plugins/althea-defaultRoot/root.js></script>
 `,
     }
 }
