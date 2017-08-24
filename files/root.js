@@ -8,11 +8,11 @@
             module.repository.althea.dom,
             module.repository.althea.site,
         ]),
-        settingsA=dom('a','Settings',{href:'settings'}),
-        loginButton=dom('button','Login',{onclick(){
+        settingsA=dom.a('Settings',{href:'settings'}),
+        loginButton=dom.button('Login',{onclick(){
             site.showLoginForm
         }}),
-        logoutButton=dom('button','Logout',{onclick(){
+        logoutButton=dom.button('Logout',{onclick(){
             site.logout
         }}),
         currentUserSpecificElements=[]
@@ -39,7 +39,7 @@
         push(e)
         function push(e){
             currentUserSpecificElements.push(e)
-            dom(document.body,e)
+            dom.body(e)
         }
     }
 })()
