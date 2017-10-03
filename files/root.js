@@ -1,5 +1,5 @@
 ;(async()=>{
-    ;(await module.shareImport('../../lib/general.static.js'))(module)
+    ;(await module.shareImport('../../lib/general.js'))(module)
     let
         [
             dom,
