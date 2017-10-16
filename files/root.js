@@ -1,13 +1,8 @@
+import{Site,dom,general}from'/lib/core.static.js'
+let site=new Site
 ;(async()=>{
-    ;(await module.shareImport('../../lib/general.js'))(module)
+    general()
     let
-        [
-            dom,
-            site,
-        ]=await Promise.all([
-            module.repository.althea.dom,
-            module.repository.althea.site,
-        ]),
         settingsA=dom.a('Settings',{href:'settings'}),
         loginButton=dom.button('Login',{onclick(){
             site.showLoginForm
