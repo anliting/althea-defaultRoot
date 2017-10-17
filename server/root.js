@@ -20,7 +20,6 @@ function get(env){
 <base href=${env.config.root}>
 <body>
 ${env.althea.loadModule(
-    env.envVars,
     'plugins/althea-defaultRoot/root.js'
 )}
 `,
