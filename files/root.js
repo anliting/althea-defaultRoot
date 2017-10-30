@@ -3,7 +3,7 @@ let site=new Site
 ;(async()=>{
     general()
     let
-        settingsA=dom.a('Settings',{href:'settings'}),
+        settingsA=dom.a('Control Panel',{href:'control-panel'}),
         loginButton=dom.button('Login',{onclick(){
             site.showLoginForm
         }}),
