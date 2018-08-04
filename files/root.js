@@ -1,12 +1,12 @@
-import{Site,dom,general}from'/lib/core.static.js'
+import{Site,doe,general}from'/lib/core.static.js'
 let site=new Site
 general()
 let
-    settingsA=dom.a('Control Panel',{href:'control-panel'}),
-    loginButton=dom.button('Login',{onclick(){
+    settingsA=doe.a('Control Panel',{href:'control-panel'}),
+    loginButton=doe.button('Login',{onclick(){
         site.showLoginForm
     }}),
-    logoutButton=dom.button('Logout',{onclick(){
+    logoutButton=doe.button('Logout',{onclick(){
         site.logout
     }}),
     currentUserSpecificElements=[]
@@ -29,10 +29,10 @@ async function showUserSpecificElement(){
 }
 function pushUserSpecificElements(e){
     if(currentUserSpecificElements.length)
-        push(dom.tn(' '))
+        push(document.createTextNode(' '))
     push(e)
     function push(e){
         currentUserSpecificElements.push(e)
-        dom.body(e)
+        doe.body(e)
     }
 }
